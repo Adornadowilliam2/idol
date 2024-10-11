@@ -258,6 +258,7 @@ function App() {
                   width: "200px",
                   height: "200px",
                   objectFit: "contain",
+                  minWidth: "100%",
                 }}
               />
             </Box>
@@ -267,7 +268,6 @@ function App() {
                 borderRadius: 1,
                 display: "flex",
                 alignItems: "center",
-                fontFamily: "Exo 2",
               }}
             >
               <FontAwesomeIcon
