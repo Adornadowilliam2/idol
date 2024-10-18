@@ -1,0 +1,59 @@
+.card {
+  width: 200px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 10px 15px #000;
+  background: whitesmoke;
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.icon-img {
+  border-radius: 50%;
+  width: 50px;
+  border: 5px solid black;
+}
+
+.pfp {
+  width: 100%;
+  display: block;
+  margin: auto;
+  box-shadow: 0 0 10px #000;
+}
+
+.header-h1 {
+  font-size: 15px;
+}
+.header-h2 {
+  font-size: 13px;
+}
+
+.country {
+  width: 50px;
+  height: 20px;
+  display: block;
+  object-fit: cover;
+  border: 1px solid black;
+}
+
+.btn-countainer {
+  gap: 10px;
+  display: grid;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-around;
+}

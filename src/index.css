@@ -12,8 +12,9 @@
 #btn-confirm,
 #btn-delete {
   background-color: red;
-  color: white;
-  cursor: pointer;
+  border: none;
+  padding: 10px 15px;
+  color: #fff;
 }
 
 #btn-add {
@@ -29,5 +30,7 @@
 #btn-update,
 #btn-edit {
   background-color: orangered;
-  color: white;
+  border: none;
+  padding: 10px 15px;
+  color: #fff;
 }

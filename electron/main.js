@@ -15,7 +15,7 @@ function createWindow() {
     },
   });
   /** * For development mode */ mainWindow.loadURL(
-    "http://localhost:5173/twice/"
+    "http://localhost:5173/idol/"
   ); /** * For production mode * mainWindow.loadFile(path.join(__dirname, '../dist/index.html')); */
 }
 app.whenReady().then(() => {

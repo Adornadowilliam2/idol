@@ -11,11 +11,15 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-regular-svg-icons";
-import { ToastContainer, toast } from "react-toastify";
+
 import "react-toastify/dist/ReactToastify.css";
 import $ from "jquery";
+import philippines from "./assets/philippines.png";
+import japan from "./assets/japan.png";
+import taiwan from "./assets/taiwan.png";
+import south_korea from "./assets/south-korea.png";
+import thailand from "./assets/thailand.png";
+import { ToastContainer, toast } from "react-toastify";
 
 function App() {
   const [rows, setRows] = useState([]);
@@ -33,7 +37,9 @@ function App() {
       country: "Japan",
       age: 27,
       thumbnail:
-        "https://th.bing.com/th?id=OSK.HERO5E6A1BF586CD3ACDDED324113EC3B01C7D5C5EBD&w=384&h=228&c=13&rs=2&o=6&pid=SANGAM",
+        "https://github.com/Adornadowilliam2/ado-music/blob/images/twice/sana.jpeg?raw=true",
+      group:
+        "https://th.bing.com/th?id=OIP.ikppCpXQZXMuXoP-DAaOEAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&cb=13&pid=3.1&rm=2",
     },
     {
       id: 2,
@@ -42,7 +48,9 @@ function App() {
       country: "Japan",
       age: 27,
       thumbnail:
-        "https://th.bing.com/th?id=OSK.Waj5Gw1a5hHGqbpwqSFOUM00diMDxELzL2I3O2eIi3w&w=120&h=120&c=12&o=6&pid=SANGAM",
+        "https://github.com/Adornadowilliam2/ado-music/blob/images/twice/momo.jpg?raw=true",
+      group:
+        "https://th.bing.com/th?id=OIP.ikppCpXQZXMuXoP-DAaOEAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&cb=13&pid=3.1&rm=2",
     },
     {
       id: 3,
@@ -51,7 +59,9 @@ function App() {
       country: "Japan",
       age: 27,
       thumbnail:
-        "https://th.bing.com/th?id=OSK.RrluHepTETClMhQ6UYT4sXPtV5Pz7sm30P--InGse0Y&w=120&h=120&c=12&o=6&pid=SANGAM",
+        "https://github.com/Adornadowilliam2/ado-music/blob/images/twice/mina.jpeg?raw=true",
+      group:
+        "https://th.bing.com/th?id=OIP.ikppCpXQZXMuXoP-DAaOEAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&cb=13&pid=3.1&rm=2",
     },
     {
       id: 4,
@@ -60,7 +70,9 @@ function App() {
       country: "Taiwan",
       age: 25,
       thumbnail:
-        "https://th.bing.com/th?id=OSK.xMdLOK68T-ez1BEdDAJmIiRsLDZfi0ay40e3Ybc5n8o&w=120&h=120&c=12&o=6&pid=SANGAM",
+        "https://github.com/Adornadowilliam2/ado-music/blob/images/twice/tzuyu.jpg?raw=true",
+      group:
+        "https://th.bing.com/th?id=OIP.ikppCpXQZXMuXoP-DAaOEAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&cb=13&pid=3.1&rm=2",
     },
     {
       id: 5,
@@ -69,7 +81,9 @@ function App() {
       country: "South Korea",
       age: 27,
       thumbnail:
-        "https://th.bing.com/th?id=OSK.WouzY8piREcDG_MWREPyeuz9yi0vgg9trUU5X2FtLqc&w=120&h=120&c=12&o=6&pid=SANGAM",
+        "https://github.com/Adornadowilliam2/ado-music/blob/images/twice/jihyo.jpg?raw=true",
+      group:
+        "https://th.bing.com/th?id=OIP.ikppCpXQZXMuXoP-DAaOEAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&cb=13&pid=3.1&rm=2",
     },
     {
       id: 6,
@@ -78,7 +92,9 @@ function App() {
       country: "South Korea",
       age: 27,
       thumbnail:
-        "https://th.bing.com/th?id=OIP.z-7RjZvXwR9RhmktNO-NPAAAAA&w=80&h=80&c=1&vt=10&bgcl=9cb344&r=0&o=6&pid=5.1",
+        "https://github.com/Adornadowilliam2/ado-music/blob/images/twice/nayeon.jpeg?raw=true",
+      group:
+        "https://th.bing.com/th?id=OIP.ikppCpXQZXMuXoP-DAaOEAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&cb=13&pid=3.1&rm=2",
     },
     {
       id: 7,
@@ -88,6 +104,8 @@ function App() {
       age: 25,
       thumbnail:
         "https://th.bing.com/th?id=OSK.LG932evPkLFLjCChSLrcpxRqsUpSqu9c-Acg5yUINxc&w=120&h=120&c=12&o=6&pid=SANGAM",
+      group:
+        "https://th.bing.com/th?id=OIP.ikppCpXQZXMuXoP-DAaOEAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&cb=13&pid=3.1&rm=2",
     },
     {
       id: 8,
@@ -97,6 +115,8 @@ function App() {
       age: 26,
       thumbnail:
         "https://th.bing.com/th?id=OSK.1d-qgmemxP_h3AXsVJGH89_6efwIZH-9buTzBs9a8PA&w=120&h=120&c=12&o=6&pid=SANGAM",
+      group:
+        "https://th.bing.com/th?id=OIP.ikppCpXQZXMuXoP-DAaOEAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&cb=13&pid=3.1&rm=2",
     },
     {
       id: 9,
@@ -106,6 +126,8 @@ function App() {
       age: 26,
       thumbnail:
         "https://github.com/Adornadowilliam2/images/blob/main/bini1.png?raw=true",
+      group:
+        "https://th.bing.com/th?id=OIP.XUXEWlhZB4nJ6_DKEq7cIQAAAA&w=166&h=166&c=8&rs=1&qlt=90&o=6&cb=13&pid=3.1&rm=2",
     },
     {
       id: 10,
@@ -115,9 +137,21 @@ function App() {
       age: 26,
       thumbnail:
         "https://github.com/Adornadowilliam2/images/blob/main/bini2.png?raw=true",
+      group:
+        "https://th.bing.com/th?id=OIP.XUXEWlhZB4nJ6_DKEq7cIQAAAA&w=166&h=166&c=8&rs=1&qlt=90&o=6&cb=13&pid=3.1&rm=2",
     },
   ];
-
+  fakeData.forEach((character) => {
+    if (character.country.toLowerCase().includes("japan")) {
+      character.flag = japan;
+    } else if (character.country.toLowerCase().includes("philippines")) {
+      character.flag = philippines;
+    } else if (character.country.toLowerCase().includes("taiwan")) {
+      character.flag = taiwan;
+    } else if (character.country.toLowerCase().includes("south korea")) {
+      character.flag = south_korea;
+    }
+  });
   const refreshData = () => {
     retrieve()
       .then((res) => {
@@ -224,86 +258,45 @@ function App() {
             Add Idol
           </Button>
         </Box>
-        {rows.map((row) => (
-          <Box
-            key={row.id}
-            sx={{
-              p: 3,
-              m: 10,
-
-              borderRadius: 2,
-              boxShadow: 2,
-            }}
-          >
-            <Typography
-              sx={{
-                backgroundColor: "gray",
-                color: "white",
-                p: 1,
-                borderRadius: 1,
-                fontWeight: "bold",
-              }}
-              variant="h5"
-            >
-              Id: {row.id}
-            </Typography>
-            <Box sx={{ mt: 2, mb: 2, textAlign: "center" }}>
-              <img
-                src={row.thumbnail}
-                alt="Thumbnail"
-                title={row.thumbnail}
-                style={{
-                  borderRadius: 1,
-                  boxShadow: 1,
-                  width: "200px",
-                  height: "200px",
-                  objectFit: "contain",
-                  minWidth: "100%",
-                }}
-              />
+        <Box className="card-container">
+          {rows.map((row) => (
+            <Box className="card" key={row.id}>
+              <span className="icon">
+                <img
+                  src={
+                    fakeData
+                      ? row.group
+                      : "https://th.bing.com/th/id/OIP.6ful-SLoZI5dZCHIw7YSQgHaKY?w=119&h=180&c=7&r=0&o=5&pid=1.7"
+                  }
+                  alt="groupname"
+                  className="icon-img"
+                />
+              </span>
+              <img src={row.thumbnail} alt="img-idol" className="pfp" />
+              <Box>
+                <Typography className="header-h1">Id: {row.id}</Typography>
+                <Typography className="header-h2">Name: {row.name}</Typography>
+                <Typography className="header-h2">Age: {row.age}</Typography>
+                <Typography className="header-h2">
+                  Country:
+                  <img src={row.flag} alt="flag" className="country" />
+                </Typography>
+                <hr />
+                <Box className="btn-container">
+                  <Button id="btn-edit" onClick={() => setEditDialog(row)}>
+                    Edit
+                  </Button>
+                  <Button
+                    id="btn-delete"
+                    onClick={() => setDeleteDialog(row.id)}
+                  >
+                    Delete
+                  </Button>
+                </Box>
+              </Box>
             </Box>
-            <Typography
-              sx={{
-                p: 1,
-                borderRadius: 1,
-                display: "flex",
-                alignItems: "center",
-              }}
-            >
-              <FontAwesomeIcon
-                icon={faStar}
-                size="2x"
-                style={{
-                  marginRight: 8,
-                  backgroundColor: "gold",
-                  color: "black",
-                }}
-              />
-              Name: {row.name}
-            </Typography>
-            <Typography sx={{ mt: 1 }}>Group Name: {row.groupname}</Typography>
-            <Typography sx={{ mt: 1 }}>Age: {row.age}</Typography>
-            <Typography sx={{ mt: 1 }}>Country: {row.country}</Typography>
-            <Box sx={{ mt: 2, display: "flex", gap: 2 }}>
-              <Button
-                id="btn-edit"
-                variant="contained"
-                color="primary"
-                onClick={() => setEditDialog(row)}
-              >
-                Edit
-              </Button>
-              <Button
-                id="btn-delete"
-                variant="contained"
-                color="secondary"
-                onClick={() => setDeleteDialog(row.id)}
-              >
-                Delete
-              </Button>
-            </Box>
-          </Box>
-        ))}
+          ))}
+        </Box>
 
         <Dialog open={!!deleteDialog}>
           <DialogTitle>Are you sure?</DialogTitle>
