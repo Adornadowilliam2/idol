@@ -1,5 +1,5 @@
 
-The purpose of this is to master api back-end and front-end.
+The purpose of this is to practice api, back-end and front-end.
 
 ## This website a sample practice that has database, ui, simple php and application
 
