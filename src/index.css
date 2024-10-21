@@ -2,35 +2,3 @@
   padding: 0;
   margin: 0;
 }
-
-#btn-cancel {
-  background-color: lightseagreen;
-  color: white;
-  cursor: pointer;
-}
-
-#btn-confirm,
-#btn-delete {
-  background-color: red;
-  border: none;
-  padding: 10px 15px;
-  color: #fff;
-}
-
-#btn-add {
-  background-color: lightseagreen;
-  color: white;
-}
-
-#btn-create {
-  background-color: green;
-  color: white;
-}
-
-#btn-update,
-#btn-edit {
-  background-color: orangered;
-  border: none;
-  padding: 10px 15px;
-  color: #fff;
-}
