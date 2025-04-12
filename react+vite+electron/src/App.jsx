@@ -18,7 +18,7 @@ import philippines from "./assets/philippines.png";
 import japan from "./assets/japan.png";
 import taiwan from "./assets/taiwan.png";
 import south_korea from "./assets/south-korea.png";
-import thailand from "./assets/thailand.png";
+
 import { ToastContainer, toast } from "react-toastify";
 import { fakeData } from "./index";
 function App() {
@@ -167,7 +167,7 @@ function App() {
                 <Typography className="header-h2">Age: {row.age}</Typography>
                 <Typography className="header-h2">
                   Country:
-                  <img src={row.flag} alt="flag" className="country" />
+                  <img src={row.flag} alt="flag"className="country" />
                 </Typography>
                 <hr />
                 <Box id="btn">

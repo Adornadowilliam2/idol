@@ -6,7 +6,7 @@ export const fakeData = [
     country: "Japan",
     age: 27,
     thumbnail:
-      "https://github.com/Adornadowilliam2/ado-music/blob/images/twice/sana.jpeg?raw=true",
+      "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRBhEfgQke22i8psGH3RhJIJy7f1xdGdWIhnCPDD_drpYhk2czFG23n913zAIFQ52WUWsttMrcGMwfGxm0s9HnkHQ",
     group:
       "https://th.bing.com/th?id=OIP.ikppCpXQZXMuXoP-DAaOEAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&cb=13&pid=3.1&rm=2",
   },
@@ -17,7 +17,7 @@ export const fakeData = [
     country: "Japan",
     age: 27,
     thumbnail:
-      "https://github.com/Adornadowilliam2/ado-music/blob/images/twice/momo.jpg?raw=true",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0cjNMBz97bt7ATmvQ44CS4QoD-saesWF1h_ly2RKoikvf8LBVidtzAPpDWPQ5LcfUkSi93A2LZIJ_QwU2WTYrgw",
     group:
       "https://th.bing.com/th?id=OIP.ikppCpXQZXMuXoP-DAaOEAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&cb=13&pid=3.1&rm=2",
   },
@@ -28,7 +28,7 @@ export const fakeData = [
     country: "Japan",
     age: 27,
     thumbnail:
-      "https://github.com/Adornadowilliam2/ado-music/blob/images/twice/mina.jpeg?raw=true",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Jcz-UV0FSCakrL2rMxcfMCVKRKUAYHnRxSNTyTrOzSVEENW6gWufRUXgbfB2GW-35JdA_fusqOBRdWLjROCr4A",
     group:
       "https://th.bing.com/th?id=OIP.ikppCpXQZXMuXoP-DAaOEAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&cb=13&pid=3.1&rm=2",
   },
@@ -39,7 +39,7 @@ export const fakeData = [
     country: "Taiwan",
     age: 25,
     thumbnail:
-      "https://github.com/Adornadowilliam2/ado-music/blob/images/twice/tzuyu.jpg?raw=true",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqRHRXTPnpmTvV8o4tNVro7k82OIKN-xQyvQ&s",
     group:
       "https://th.bing.com/th?id=OIP.ikppCpXQZXMuXoP-DAaOEAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&cb=13&pid=3.1&rm=2",
   },
@@ -50,7 +50,7 @@ export const fakeData = [
     country: "South Korea",
     age: 27,
     thumbnail:
-      "https://github.com/Adornadowilliam2/ado-music/blob/images/twice/jihyo.jpg?raw=true",
+      "https://i.scdn.co/image/ab6761610000e5eb92d8ef35f578a53e177a3e13",
     group:
       "https://th.bing.com/th?id=OIP.ikppCpXQZXMuXoP-DAaOEAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&cb=13&pid=3.1&rm=2",
   },
@@ -61,7 +61,7 @@ export const fakeData = [
     country: "South Korea",
     age: 27,
     thumbnail:
-      "https://github.com/Adornadowilliam2/ado-music/blob/images/twice/nayeon.jpeg?raw=true",
+      "https://static.kpopping.com/c2/4/220225-TWICE-Instagram-Update-Nayeon-documents-1.jpeg",
     group:
       "https://th.bing.com/th?id=OIP.ikppCpXQZXMuXoP-DAaOEAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&cb=13&pid=3.1&rm=2",
   },
