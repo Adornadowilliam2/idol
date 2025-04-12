@@ -27,6 +27,7 @@ function App() {
   const columns = [
     { field: "id", headerName: "ID" },
     { field: "name", headerName: "Name", width: 150 },
+    { field: "image", headerName: "Image", renderCell: (params) => <img src={params.row.thumbnail} alt={params.row.name} style={{ width: "100%", height: "100%", objectFit: "cover" }} />, width: 150 },
     { field: "groupname", headerName: "GroupName", width: 150 },
     { field: "country", headerName: "Country", width: 150 },
     { field: "age", headerName: "Age", width: 150 },
@@ -158,7 +159,7 @@ function App() {
       <ToastContainer />
       <Box
         sx={{
-          background: "gray",
+          background: "lightgray",
           p: 2,
           display: "flex",
           justifyContent: "space-between",
