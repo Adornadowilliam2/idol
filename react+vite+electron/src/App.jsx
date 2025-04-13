@@ -28,8 +28,7 @@ function App() {
   const [editDialog, setEditDialog] = useState(null);
   const [loading, setLoading] = useState(false);
   const [warnings, setWarnings] = useState({});
-
-  fakeData.forEach((character) => {
+  const getflag = (character ) =>{
     if (character.country.toLowerCase().includes("japan")) {
       character.flag = japan;
     } else if (character.country.toLowerCase().includes("philippines")) {
@@ -39,20 +38,26 @@ function App() {
     } else if (character.country.toLowerCase().includes("south korea")) {
       character.flag = south_korea;
     }
+  }
+
+  fakeData.forEach((character) => {
+    getflag(character);
   });
+
   const refreshData = () => {
     retrieve()
       .then((res) => {
+        console.log(res);
         if (res?.ok) {
           setRows(res.data);
         } else {
           toast.error(res?.message ?? "Something went wrong.");
-          setRows(fakeData); // Use fake data on error
+          setRows(fakeData);
         }
       })
       .catch(() => {
         toast.error("Failed to fetch data. Using fake data.");
-        setRows(fakeData); // Use fake data if there’s an error
+        setRows(fakeData); 
       });
   };
 
@@ -131,6 +136,14 @@ function App() {
     }
   };
 
+  const groupnameimage = (row) => {
+    if (row.groupname == "Twice") {
+      return "https://th.bing.com/th?id=OIP.ikppCpXQZXMuXoP-DAaOEAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&cb=13&pid=3.1&rm=2";
+    }else if(row.groupname == "Bini") {
+      return "https://th.bing.com/th?id=OIP.XUXEWlhZB4nJ6_DKEq7cIQAAAA&w=166&h=166&c=8&rs=1&qlt=90&o=6&cb=13&pid=3.1&rm=2";
+    }
+  };
+
   return (
     <>
       <Box>
@@ -151,12 +164,8 @@ function App() {
             <Box className="card" key={row.id}>
               <span className="icon">
                 <img
-                  src={
-                    fakeData
-                      ? row.group
-                      : "https://th.bing.com/th/id/OIP.6ful-SLoZI5dZCHIw7YSQgHaKY?w=119&h=180&c=7&r=0&o=5&pid=1.7"
-                  }
-                  alt="groupname"
+                  src={fakeData[row.id - 1]?.groupname || groupnameimage(row)}
+                  alt={row.groupname}
                   className="icon-img"
                 />
               </span>
@@ -167,7 +176,7 @@ function App() {
                 <Typography className="header-h2">Age: {row.age}</Typography>
                 <Typography className="header-h2">
                   Country:
-                  <img src={row.flag} alt="flag"className="country" />
+                  <img src={row.flag || getflag(row)} alt="flag"className="country" />
                 </Typography>
                 <hr />
                 <Box id="btn">
